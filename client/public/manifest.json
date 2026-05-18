@@ -1,0 +1,29 @@
+{
+  "name": "CrewCheck - Análise de Escala de Tripulantes",
+  "short_name": "CrewCheck",
+  "description": "Análise de conformidade de escalas de tripulantes conforme RBAC 117 e Lei 13.475/2017. Funciona 100% offline.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#1B2A4A",
+  "theme_color": "#1B2A4A",
+  "orientation": "portrait-primary",
+  "lang": "pt-BR",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/manus-storage/logo-icon_41e9d2d3.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/manus-storage/logo-icon_41e9d2d3.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [],
+  "prefer_related_applications": false
+}
