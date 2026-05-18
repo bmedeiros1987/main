@@ -1,0 +1,55 @@
+
+ RUN  v2.1.9 /home/ubuntu/crew-roster-analyzer
+
+stderr | client/src/lib/sharing.test.ts > sharing utilities > copyToClipboard > should return false on clipboard error
+Error copying to clipboard: Error: Clipboard error
+    at Object.<anonymous> (/home/ubuntu/crew-roster-analyzer/client/src/lib/sharing.test.ts:135:49)
+    at Object.mockCall (file:///home/ubuntu/crew-roster-analyzer/node_modules/.pnpm/@vitest+spy@2.1.9/node_modules/@vitest/spy/dist/index.js:61:17)
+    at Object.spy [as writeText] (file:///home/ubuntu/crew-roster-analyzer/node_modules/.pnpm/tinyspy@3.0.2/node_modules/tinyspy/dist/index.js:45:80)
+    at Module.copyToClipboard (/home/ubuntu/crew-roster-analyzer/client/src/lib/sharing.ts:79:31)
+    at /home/ubuntu/crew-roster-analyzer/client/src/lib/sharing.test.ts:139:28
+    at file:///home/ubuntu/crew-roster-analyzer/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:146:14
+    at file:///home/ubuntu/crew-roster-analyzer/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:533:11
+    at runWithTimeout (file:///home/ubuntu/crew-roster-analyzer/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:39:7)
+    at runTest (file:///home/ubuntu/crew-roster-analyzer/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:1056:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+ ✓ client/src/lib/sharing.test.ts > sharing utilities > generateShareMessage > should generate a message with compliant status
+ ✓ client/src/lib/sharing.test.ts > sharing utilities > generateShareMessage > should generate a message with violation status
+ ✓ client/src/lib/sharing.test.ts > sharing utilities > generateShareMessage > should generate a message with warning status
+ ✓ client/src/lib/sharing.test.ts > sharing utilities > generateShareMessage > should include flight count
+ ✓ client/src/lib/sharing.test.ts > sharing utilities > generateShareMessage > should include error and warning counts
+ ✓ client/src/lib/sharing.test.ts > sharing utilities > copyToClipboard > should copy message to clipboard
+ ✓ client/src/lib/sharing.test.ts > sharing utilities > copyToClipboard > should return false on clipboard error
+ ✓ client/src/lib/sharing.test.ts > sharing utilities > copyToClipboard > should copy the generated message
+ ✓ client/src/hooks/useAnalysisHistory.test.ts > useAnalysisHistory > should initialize with empty history
+ ✓ client/src/hooks/useAnalysisHistory.test.ts > useAnalysisHistory > should save analysis to history
+ ✓ client/src/hooks/useAnalysisHistory.test.ts > useAnalysisHistory > should persist history to localStorage
+ ✓ client/src/hooks/useAnalysisHistory.test.ts > useAnalysisHistory > should load history from localStorage on mount
+ ✓ client/src/hooks/useAnalysisHistory.test.ts > useAnalysisHistory > should get analyses by month
+ ✓ client/src/hooks/useAnalysisHistory.test.ts > useAnalysisHistory > should return empty array for non-existent month
+ ✓ client/src/hooks/useAnalysisHistory.test.ts > useAnalysisHistory > should delete analysis record
+ ✓ client/src/hooks/useAnalysisHistory.test.ts > useAnalysisHistory > should clear all history
+ ✓ client/src/hooks/useAnalysisHistory.test.ts > useAnalysisHistory > should keep only last 12 months of history
+ ✓ client/src/hooks/useAnalysisHistory.test.ts > useAnalysisHistory > should group analyses by month
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  server/routers.test.ts [ server/routers.test.ts ]
+ReferenceError: router is not defined
+ ❯ server/routers.ts:20:26
+     18|  * Handles analysis history, anonymous statistics, and consent managem…
+     19|  */
+     20| export const appRouter = router({
+       |                          ^
+     21|   /**
+     22|    * Analysis History Procedures
+ ❯ server/routers.test.ts:15:25
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+ Test Files  1 failed | 2 passed (3)
+      Tests  18 passed (18)
+   Start at  03:25:52
+   Duration  2.02s (transform 235ms, setup 0ms, collect 470ms, tests 85ms, environment 4.07s, prepare 255ms)
+
